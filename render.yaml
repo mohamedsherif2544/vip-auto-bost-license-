@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vip-auto-bost-license
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: VIP_PASSWORD
+        value: Facebook2026
+      - key: ADMIN_KEY
+        generateValue: true
+      - key: MAX_DEVICES
+        value: 3
